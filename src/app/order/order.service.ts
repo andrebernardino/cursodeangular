@@ -4,7 +4,8 @@ import { CartItem } from "app/restaurant-detail/shopping-cart/cart-item.model";
 import { Order, OrderItem } from "app/order/order.model";
 import { Observable } from "rxjs/Observable";
 import { Http, Headers, RequestOptions } from "@angular/http";
-  
+import { MEAT_API } from "app/app.api";
+
 
 @Injectable()
 export class OrderService {
@@ -26,8 +27,16 @@ export class OrderService {
         return this.cartService.total()
     }
     checkOrder(order:Order): Observable<string>{
-        const h
-return this.http.post(`${MEAT_API}/orders`, JSON.stringify(order))
+        const headers = new Headers()
+        headers.append('Content-Type', 'application/json')
+        return this.http.post(`${MEAT_API}/orders`, 
+        JSON.stringify(order), 
+        new RequestOptions({headers:headers}))
+        .map(Response => Response.json())
+        .map(order => order.id)
+    }
+    clear(){
+        this.cartService.clear()
     }
 
 }
