@@ -370,5 +370,107 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Avenida das naçõ",
+      "number": "344",
+      "optionalAddress": "dss",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Avenida alaor prata",
+      "number": "334",
+      "optionalAddress": "apto 102",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 3,
+          "menuId": "espreso"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "Avenida leoncio vieira prata",
+      "number": "3322",
+      "optionalAddress": "102",
+      "paymentOption": "",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 2,
+          "menuId": "bread"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "aveenida x",
+      "number": "16",
+      "optionalAddress": "",
+      "paymentOption": "",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "address": "avenida sao jose",
+      "number": "3433",
+      "optionalAddress": "454545",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 5
+    }
+  ]
 }
