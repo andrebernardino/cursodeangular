@@ -21,7 +21,6 @@ import { SharedModule } from "app/shared/shared.module";
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NotFoundComponent } from './not-found/not-found.component'
 
-
 @NgModule({
   declarations: [
     AppComponent,
